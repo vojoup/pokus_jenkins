@@ -10,4 +10,10 @@ pipeline{
             }
         }
     }
+
+    post{
+        success{
+            mail to: voj.oup@gmail.com, subject: 'SUCCESS!'
+        }
+    }
 }
